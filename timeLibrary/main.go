@@ -13,4 +13,5 @@ func main() {
 	fmt.Println("time = ", now , "type = ", reflect.TypeOf(now))
 	fmt.Println("distane = ", elapsed)
 	fmt.Println("add 2 hours", now.AddDate(1,2,3))
+	fmt.Println("week day:", now.Weekday()) 
 }

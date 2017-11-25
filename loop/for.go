@@ -1,5 +1,6 @@
 package main
 
+//Go has just one loop word -> FOR
 import (
 	"fmt"
 )

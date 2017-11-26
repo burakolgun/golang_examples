@@ -1,5 +1,6 @@
 package main
 
+# function bittikten sonra calisir 
 import(
 	"fmt"
 )

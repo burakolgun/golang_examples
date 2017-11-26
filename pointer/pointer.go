@@ -20,5 +20,4 @@ func main() {
 	fmt.Println("p =", p)	
 	point(&p)
 	fmt.Println("p =", p)
-
 }

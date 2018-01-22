@@ -14,7 +14,7 @@ func sayHelloForMyName(name string){
 
 func sleep(name string) {
 	for {
-	time.Sleep(10000000)
+	time.Sleep(1 * time.Second)
 	fmt.Println(name)
 	}
 }

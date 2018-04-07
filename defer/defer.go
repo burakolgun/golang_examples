@@ -1,17 +1,14 @@
 package main
 
-# function bittikten sonra calisir 
+// function bittikten sonra calisir
 import(
 	"fmt"
 )
-var i int = 1
+
 func main() {
-	defer fmt.Println("if this function done")	
-	for i < 100 {
+
+	defer fmt.Println("Done")
+	for i:=0;i < 100; i++ {
 		fmt.Println(i)
-		i++
-		if i > 50 && i < 60 {
-			defer fmt.Println("if done", i)
-		}
 	}
 }

@@ -1,8 +1,8 @@
 package main
 
-import(
+import (
+	"errors"
 	"fmt"
-	"errors"	
 )
 
 func mailCheck(mailAdress string) (error, bool) {
@@ -17,7 +17,7 @@ func mailCheck(mailAdress string) (error, bool) {
 
 func main() {
 	mails := map[int]string{1: "a@mail.com", 2: "b@mail.com", 3: "e@mail.com"}
-	
+
 	for key, value := range mails {
 		error, success := mailCheck(value)
 		if success {
@@ -26,5 +26,5 @@ func main() {
 			fmt.Println(error, key)
 		}
 	}
-	
+
 }

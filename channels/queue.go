@@ -21,6 +21,7 @@ func main() {
 	defer fmt.Println("Channel Sample Finished")
 
 	fmt.Printf("Queue Size %d \n", queueSize)
+
 	fmt.Printf("Number of Readers %d \n", numberOfReaders)
 
 	//creating  queue reader(s)

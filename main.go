@@ -1,6 +1,7 @@
 package main
 
 import "./embeddedStatements"
+
 func main() {
-	embeddedStatements.Embedded(true);
+	embeddedStatements.Embedded(true)
 }

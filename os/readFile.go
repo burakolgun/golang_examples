@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 		return
 	}
 
-	CreateBytes := make([] byte, fileStats.Size())
+	CreateBytes := make([]byte, fileStats.Size())
 	ReadByte, err := file.Read(CreateBytes)
 
 	ReadText := string(CreateBytes)
@@ -29,4 +29,3 @@ func main() {
 	fmt.Println(ReadText)
 	fmt.Println(ReadByte)
 }
-

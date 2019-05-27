@@ -13,6 +13,6 @@ func variadicFunc(variables ...int) int {
 }
 
 func main() {
-	fmt.Println(variadicFunc(10,20,30,40))
+	fmt.Println(variadicFunc(10, 20, 30, 40))
 
 }

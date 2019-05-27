@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func euclid(x,y int) int {
+func euclid(x, y int) int {
 	if y == 0 {
 		return x
 	}
@@ -13,5 +13,5 @@ func euclid(x,y int) int {
 }
 
 func main() {
-	fmt.Println("euclid for 48 and 30 =", euclid(48,30))
+	fmt.Println("euclid for 48 and 30 =", euclid(48, 30))
 }

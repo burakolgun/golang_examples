@@ -1,14 +1,14 @@
 package main
 
 // function bittikten sonra calisir
-import(
+import (
 	"fmt"
 )
 
 func main() {
 
 	defer fmt.Println("Done")
-	for i:=0;i < 100; i++ {
+	for i := 0; i < 100; i++ {
 		fmt.Println(i)
 	}
 }

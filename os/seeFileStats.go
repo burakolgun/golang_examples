@@ -1,12 +1,12 @@
 package main
 
 import (
-	"os"
 	"fmt"
+	"os"
 )
 
 func main() {
-	file , err := os.Open("os/go.txt")
+	file, err := os.Open("os/go.txt")
 
 	if err != nil {
 		fmt.Println(err.Error())

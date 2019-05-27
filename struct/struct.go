@@ -5,10 +5,10 @@ import (
 )
 
 type human struct {
-	name string
-	age int
+	name    string
+	age     int
 	agility int
-	job string
+	job     string
 }
 
 type circle struct {
@@ -20,7 +20,7 @@ func (a *circle) area() int {
 }
 
 func (a *circle) perimeter() int {
-	return 2 *3 * a.radius
+	return 2 * 3 * a.radius
 }
 
 func main() {
@@ -33,11 +33,10 @@ func main() {
 	secondHuman := human{name: "mahmut", age: 25, agility: 4, job: "no job"}
 
 	fmt.Println(secondHuman)
-	
+
 	circle := circle{4}
 
 	fmt.Println("area = ", circle.area())
 	fmt.Println("perimeter = ", circle.perimeter())
-
 
 }

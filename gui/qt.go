@@ -1,12 +1,13 @@
 package main
 
 import (
+	"fmt"
 	"github.com/visualfc/goqt/ui"
 	"os"
-	"fmt"
 )
 
 var channel = make(chan bool)
+
 func main() {
 	ui.RunEx(os.Args, mainWindow)
 }
@@ -51,8 +52,8 @@ func mainWindow() {
 
 func listenButton(edit *ui.QPlainTextEdit) {
 	i := 0
-	for  {
-		<- channel
+	for {
+		<-channel
 		i++
 		edit.AppendPlainText(fmt.Sprintf("Clicked -- %d", i))
 	}

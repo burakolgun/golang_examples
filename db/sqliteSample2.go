@@ -2,12 +2,12 @@ package main
 
 import (
 	"database/sql"
-	_ "github.com/mattn/go-sqlite3"
 	"fmt"
+	_ "github.com/mattn/go-sqlite3"
 )
 
 type book struct {
-	name string
+	name   string
 	author string
 }
 
@@ -25,7 +25,7 @@ func main() {
 
 }
 
-func getList (db *sql.DB) {
+func getList(db *sql.DB) {
 	rows, err := db.Query("SELECT * FROM book")
 
 	if err != nil {
@@ -35,7 +35,7 @@ func getList (db *sql.DB) {
 
 	defer rows.Close()
 
-	books := make([] * book, 0)
+	books := make([]*book, 0)
 
 	for rows.Next() {
 		row := new(book)

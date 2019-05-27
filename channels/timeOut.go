@@ -5,8 +5,8 @@ import (
 	"time"
 )
 
-var chan1 = make (chan bool, 1)
-var chan2 = make (chan bool, 1)
+var chan1 = make(chan bool, 1)
+var chan2 = make(chan bool, 1)
 
 func main() {
 	fmt.Println("Process Starting...")
@@ -14,10 +14,10 @@ func main() {
 	go timer(6)
 
 	select {
-		case <- chan1:
-			fmt.Println("Mission Completed")
-		case <- chan2:
-			fmt.Println("Time Out")
+	case <-chan1:
+		fmt.Println("Mission Completed")
+	case <-chan2:
+		fmt.Println("Time Out")
 	}
 }
 
@@ -26,7 +26,7 @@ func timer(second time.Duration) {
 	chan2 <- true
 }
 
-func worker (second time.Duration) {
+func worker(second time.Duration) {
 	fmt.Println("Process Started")
 	time.Sleep(second * time.Second)
 	chan1 <- true

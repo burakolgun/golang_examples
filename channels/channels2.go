@@ -1,17 +1,16 @@
 package main
 
-import(
+import (
 	"fmt"
 	"time"
 )
-
 
 func main() {
 	channel := make(chan string)
 	fmt.Println("main run")
 	go write(channel)
 	fmt.Println("waiting")
-	fmt.Println(<- channel)
+	fmt.Println(<-channel)
 
 }
 

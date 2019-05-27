@@ -1,9 +1,11 @@
 package main
+
 import (
-	"fmt"
 	"../import_package"
+	"fmt"
 )
-func main(){
+
+func main() {
 	fmt.Println("hello, World")
 	import_package.Now()
 }

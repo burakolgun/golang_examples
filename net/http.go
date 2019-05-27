@@ -1,12 +1,12 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
 	"io/ioutil"
+	"net/http"
 )
 
-func main()  {
+func main() {
 	site := string("http://example.com")
 	response, err := http.Get(site)
 

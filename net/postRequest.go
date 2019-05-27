@@ -12,10 +12,10 @@ func main() {
 	baseUrl := "http://localhost:4000/api/recover"
 
 	form := url.Values{
-		"name": {"burak"},
-		"surname":  {"olgun"},
-		"postRequest":  {"Hello, World"},
-		"from":     {"go"},
+		"name":        {"burak"},
+		"surname":     {"olgun"},
+		"postRequest": {"Hello, World"},
+		"from":        {"go"},
 	}
 
 	body := bytes.NewBufferString(form.Encode())

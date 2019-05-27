@@ -16,7 +16,7 @@ func main() {
 
 	fmt.Println("here1")
 
-	b := <- channel
+	b := <-channel
 
 	fmt.Println(b)
 }

@@ -7,7 +7,7 @@ import (
 )
 
 type book struct {
-	name string
+	name   string
 	author string
 }
 

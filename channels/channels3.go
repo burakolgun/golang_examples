@@ -1,6 +1,6 @@
 package main
 
-import(
+import (
 	"fmt"
 	"time"
 )
@@ -10,9 +10,9 @@ func main() {
 	b := make(chan string)
 
 	fmt.Println("start")
-	
+
 	go getA(a)
-	go getBAfterA(a,b)
+	go getBAfterA(a, b)
 	<-b
 	fmt.Println("b , a ok")
 }
@@ -23,7 +23,7 @@ func getA(a chan string) {
 	a <- "A ok"
 }
 
-func getBAfterA(a,b chan string) {
+func getBAfterA(a, b chan string) {
 	fmt.Println("in b")
 	<-a
 	time.Sleep(3 * time.Second)

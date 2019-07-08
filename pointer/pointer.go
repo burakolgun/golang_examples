@@ -23,4 +23,11 @@ func main() {
 	fmt.Println("p =", p)
 	point(&p)
 	fmt.Println("p =", p)
+
+	fmt.Println("Example two")
+
+	o := 40
+	l := &o
+	*l++
+	fmt.Println(p, "P")
 }

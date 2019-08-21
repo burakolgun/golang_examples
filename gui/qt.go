@@ -1,4 +1,4 @@
-package main
+package gui
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 
 var channel = make(chan bool)
 
-func main() {
+func ExampleQt() {
 	ui.RunEx(os.Args, mainWindow)
 }
 

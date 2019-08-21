@@ -1,4 +1,4 @@
-package main
+package functions
 
 import (
 	"fmt"
@@ -12,6 +12,6 @@ func euclid(x, y int) int {
 	return euclid(y, x%y)
 }
 
-func main() {
+func ExampleEuclid() {
 	fmt.Println("euclid for 48 and 30 =", euclid(48, 30))
 }

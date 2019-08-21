@@ -1,4 +1,4 @@
-package main
+package _interface
 
 import (
 	"fmt"
@@ -36,7 +36,7 @@ func (p photo) getTotalSize() int {
 	return ((p.width * 2) + (p.height * 2))
 }
 
-func main() {
+func ExampleInterface() {
 	photo := photo{"foto", 50, 100}
 	fmt.Println(photo)
 	photoImpelements(photo)

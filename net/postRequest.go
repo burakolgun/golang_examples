@@ -1,4 +1,4 @@
-package main
+package net
 
 import (
 	"bytes"
@@ -8,7 +8,7 @@ import (
 	"net/url"
 )
 
-func main() {
+func ExamplePostRequest() {
 	baseUrl := "http://localhost:4000/api/recover"
 
 	form := url.Values{

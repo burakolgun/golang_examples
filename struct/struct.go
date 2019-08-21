@@ -1,4 +1,4 @@
-package main
+package _struct
 
 import (
 	"fmt"
@@ -23,7 +23,7 @@ func (a *circle) perimeter() int {
 	return 2 * 3 * a.radius
 }
 
-func main() {
+func ExampleStruct() {
 	firstHuman := human{}
 	firstHuman.name = "John"
 	firstHuman.agility = 4

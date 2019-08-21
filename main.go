@@ -19,5 +19,6 @@ func main() {
 	//channels.ExampleThree()
 	//channels.ExampleFour()
 	//conditions.IfElseExample()
+	//_defer.Example()
 	fmt.Println("//Main")
 }

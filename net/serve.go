@@ -1,11 +1,11 @@
-package main
+package net
 
 import (
 	"io"
 	"net/http"
 )
 
-func main() {
+func ExampleServer() {
 	http.HandleFunc("/", rootPage)
 	http.HandleFunc("/second", secondPage)
 	http.ListenAndServe(":1983", nil)

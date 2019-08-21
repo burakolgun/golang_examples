@@ -1,6 +1,16 @@
-package main
+package loop
 
-func main() {
+import (
+	"fmt"
+	"time"
+)
+
+func Forever() {
+	number := 0
+
 	for {
+		number++
+		fmt.Println("forever", number)
+		time.Sleep(time.Millisecond * 500)
 	}
 }

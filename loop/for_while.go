@@ -2,7 +2,7 @@ package loop
 
 import "fmt"
 
-func ExampleContinued() {
+func ExampleForWhile() {
 	sum := 1
 	for sum < 1000 {
 		sum += sum

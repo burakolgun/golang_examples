@@ -1,4 +1,4 @@
-package main
+package functions
 
 import "fmt"
 
@@ -8,6 +8,6 @@ func split(sum int) (x, y int) {
 	return
 }
 
-func main() {
+func ExampleNamedReturnValues() {
 	fmt.Println(split(17))
 }

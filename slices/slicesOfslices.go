@@ -1,11 +1,11 @@
-package main
+package slices
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func ExampleSliceOfSlices() {
 	// Create a tic-tac-toe board.
 	board := [][]string{
 		[]string{"_", "_", "_"},

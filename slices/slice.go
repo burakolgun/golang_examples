@@ -1,10 +1,10 @@
-package main
+package slices
 
 import (
 	"fmt"
 )
 
-func main() {
+func ExampleSlice() {
 	var array = make([]int, 3)
 	var copyArray = make([]int, 5)
 

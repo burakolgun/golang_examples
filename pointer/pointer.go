@@ -1,4 +1,4 @@
-package main
+package pointer
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 func point(p *int) {
 	*p = 99
 }
-func main() {
+func ExamplePointer() {
 	a := 5
 	fmt.Println("a=", a)
 	fmt.Println("a's pointer value=", &a)

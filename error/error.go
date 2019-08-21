@@ -1,29 +1,29 @@
-package main
+package error
 
 import (
 	"errors"
 	"fmt"
 )
 
-func mailCheck(mailAdress string) (error, bool) {
-	alreadyAdress := map[string]bool{"a@mail.com": true, "b@mail.com,": true, "c@mail.com": true, "d@mail.com": true}
+func mailCheck(mailAddress string) (error, bool) {
+	alreadyDefinedAddress := map[string]bool{"a@mail.com": true, "b@mail.com,": true, "c@mail.com": true, "d@mail.com": true}
 
-	if alreadyAdress[mailAdress] {
-		return errors.New("Already adress"), false
+	if alreadyDefinedAddress[mailAddress] {
+		return errors.New("already defined address"), false
 	}
 
 	return nil, true
 }
 
-func main() {
+func Example() {
 	mails := map[int]string{1: "a@mail.com", 2: "b@mail.com", 3: "e@mail.com"}
 
 	for key, value := range mails {
-		error, success := mailCheck(value)
+		err, success := mailCheck(value)
 		if success {
 			fmt.Println(success, "success", key)
 		} else {
-			fmt.Println(error, key)
+			fmt.Println(err, key)
 		}
 	}
 

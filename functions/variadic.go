@@ -1,4 +1,4 @@
-package main
+package functions
 
 import "fmt"
 
@@ -12,7 +12,7 @@ func variadicFunc(variables ...int) int {
 	return total
 }
 
-func main() {
+func ExampleVariadic() {
 	fmt.Println(variadicFunc(10, 20, 30, 40))
 
 }

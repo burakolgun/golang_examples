@@ -1,4 +1,4 @@
-package main
+package net
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func main() {
+func ExampleNet() {
 	site := string("http://example.com")
 	response, err := http.Get(site)
 

@@ -1,4 +1,4 @@
-package main
+package pointer
 
 import "fmt"
 
@@ -8,7 +8,7 @@ type Vertex struct {
 	C string
 }
 
-func main() {
+func ExampleStructPointer() {
 	v := Vertex{1, 2, "qwe"}
 	p := &v
 	p.C = "aaa"

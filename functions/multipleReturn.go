@@ -1,4 +1,4 @@
-package main
+package functions
 
 import (
 	"fmt"
@@ -13,7 +13,7 @@ func multipleOperation(number1, number2 int) (int, int, int, int) {
 	return sum, sub, mul, div
 }
 
-func main() {
+func ExampleMultipleReturn() {
 	sum, sub, div, mul := multipleOperation(30, 12)
 	fmt.Println(sum, sub, div, mul)
 

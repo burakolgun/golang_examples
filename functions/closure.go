@@ -1,4 +1,4 @@
-package main
+package functions
 
 import (
 	"fmt"
@@ -20,7 +20,7 @@ func count() (sum func() int, counter func() int) {
 	return sum, counter
 }
 
-func main() {
+func ExampleClosure() {
 	sum, counter := count()
 
 	for counter() <= 50 { //1

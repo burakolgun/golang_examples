@@ -1,11 +1,11 @@
-package main
+package _defer
 
-// function bittikten sonra calisir
+//executes after the function
 import (
 	"fmt"
 )
 
-func main() {
+func Example() {
 
 	defer fmt.Println("Done")
 	for i := 0; i < 100; i++ {

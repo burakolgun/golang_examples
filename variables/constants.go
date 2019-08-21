@@ -1,10 +1,10 @@
-package main
+package constants
 
 import "fmt"
 
 const Pi = 3.14
 
-func main() {
+func ExampleConstants() {
 	const World = "世界"
 	fmt.Println("Hello", World)
 	fmt.Println("Happy", Pi, "Day")

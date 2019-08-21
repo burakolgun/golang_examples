@@ -1,4 +1,4 @@
-package main
+package functions
 
 import (
 	"fmt"
@@ -12,6 +12,6 @@ func factorial(num int) int {
 	return num * factorial(num-1)
 }
 
-func main() {
+func ExampleRecursion() {
 	fmt.Println("5 factarial = ", factorial(5))
 }

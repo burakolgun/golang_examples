@@ -1,8 +1,6 @@
 package main
 
 import (
-	//"./go_routines/race_condition/mutual_exclusion"
-	//"./channels"
 	"fmt"
 )
 
@@ -20,5 +18,6 @@ func main() {
 	//channels.ExampleTwo()
 	//channels.ExampleThree()
 	//channels.ExampleFour()
+	//conditions.IfElseExample()
 	fmt.Println("//Main")
 }

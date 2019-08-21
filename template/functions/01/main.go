@@ -7,7 +7,7 @@ import (
 	"text/template"
 )
 
-var tpl * template.Template
+var tpl *template.Template
 
 var fm = template.FuncMap{
 	"uc": strings.ToUpper,
@@ -27,7 +27,7 @@ type sage struct {
 func firstThree(s string) string {
 	s = strings.TrimSpace(s)
 	s = s[:3]
-	return  s
+	return s
 }
 
 func init() {

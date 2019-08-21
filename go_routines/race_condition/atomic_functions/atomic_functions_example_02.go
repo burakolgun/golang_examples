@@ -25,7 +25,7 @@ func ExampleTwo() {
 
 	//Safely flag it is time to shutdown.
 	fmt.Println("Shutdown Now")
-	atomic.StoreInt64(&shutdown,  1)
+	atomic.StoreInt64(&shutdown, 1)
 
 	wg.Wait()
 }
@@ -46,4 +46,3 @@ func doWork(name string) {
 		}
 	}
 }
-

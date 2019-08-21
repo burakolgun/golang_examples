@@ -10,17 +10,18 @@ import (
 type serve int
 
 var tpl *template.Template
-func (s serve)ServeHTTP(writer http.ResponseWriter, request *http.Request) {
+
+func (s serve) ServeHTTP(writer http.ResponseWriter, request *http.Request) {
 	err := request.ParseForm()
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	data := struct {
-		Method string
+		Method      string
 		Submissions url.Values
-		URL *url.URL
-		Header map[string][]string
+		URL         *url.URL
+		Header      map[string][]string
 	}{
 		request.Method,
 		request.Form,

@@ -5,9 +5,9 @@ import (
 )
 
 type photo struct {
-	name string
+	name   string
 	height int
-	width int
+	width  int
 }
 
 type photoInterface interface {
@@ -20,20 +20,20 @@ type photoInterface interface {
 func photoImpelements(p photoInterface) {
 }
 
-func(p photo) getHeight() {
+func (p photo) getHeight() {
 	fmt.Print(p.height)
 }
 
-func(p photo) getWidth() {
+func (p photo) getWidth() {
 	fmt.Print(p.width)
 }
 
-func(p photo) getName() {
+func (p photo) getName() {
 	fmt.Print(p.name)
 }
 
-func(p photo) getTotalSize() int{
-	return ((p.width * 2) + (p.height *2))
+func (p photo) getTotalSize() int {
+	return ((p.width * 2) + (p.height * 2))
 }
 
 func main() {

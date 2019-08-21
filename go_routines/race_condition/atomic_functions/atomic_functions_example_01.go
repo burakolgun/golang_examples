@@ -14,7 +14,7 @@ import (
 
 var (
 	counter int64
-	wg sync.WaitGroup
+	wg      sync.WaitGroup
 )
 
 func ExampleOne() {

@@ -1,11 +1,11 @@
 package queue
 
 import (
-"bufio"
-"fmt"
-"os"
-"strconv"
-"time"
+	"bufio"
+	"fmt"
+	"os"
+	"strconv"
+	"time"
 )
 
 const (

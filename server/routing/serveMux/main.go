@@ -17,12 +17,12 @@ func (hotdog hotdog) ServeHTTP(writer http.ResponseWriter, request *http.Request
 }
 
 func main() {
-	 var d hotdog
-	 var c hotcat
+	var d hotdog
+	var c hotcat
 
-	 mux := http.NewServeMux()
-	 mux.Handle("/dog/", d)
-	 mux.Handle("/cat", c)
+	mux := http.NewServeMux()
+	mux.Handle("/dog/", d)
+	mux.Handle("/cat", c)
 
-	 http.ListenAndServe(":3001", mux)
+	http.ListenAndServe(":3001", mux)
 }

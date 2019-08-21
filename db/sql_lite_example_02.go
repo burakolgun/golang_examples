@@ -1,17 +1,13 @@
-package main
+package db
 
 import (
 	"database/sql"
 	"fmt"
 	_ "github.com/mattn/go-sqlite3"
+	"log"
 )
 
-type book struct {
-	name   string
-	author string
-}
-
-func main() {
+func SqlLiteExampleTwo() {
 	db, err := sql.Open("sqlite3", "books.sqlite")
 
 	if err != nil {
@@ -39,13 +35,15 @@ func getList(db *sql.DB) {
 
 	for rows.Next() {
 		row := new(book)
-		rows.Scan(&row.name, &row.author)
+		err := rows.Scan(&row.name, &row.author)
 
+		if err != nil {
+			log.Fatal(err)
+		}
 		books = append(books, row)
 	}
 
 	for i, book := range books {
 		fmt.Printf("%d %s %s \n", i, book.author, book.name)
 	}
-
 }

@@ -6,11 +6,10 @@ import (
 	"sync"
 )
 
-
 //wg is used for wait for the program to finish
 var wg sync.WaitGroup
 
-func ExampleThree()  {
+func ExampleThree() {
 	//Allocate one logical processors for scheduler to use
 
 	runtime.GOMAXPROCS(1)
@@ -34,14 +33,14 @@ func printPrime(prefix string) {
 	// Schedule the call to Done to tell main we are done.
 	defer wg.Done()
 
-	next:
-		for outer := 2; outer < 5000; outer++ {
-			for inner := 2; inner < outer; inner++ {
-				if outer % inner == 0 {
-					continue next
-				}
+next:
+	for outer := 2; outer < 5000; outer++ {
+		for inner := 2; inner < outer; inner++ {
+			if outer%inner == 0 {
+				continue next
 			}
-			fmt.Printf("%s:%d\n", prefix, outer)
+		}
+		fmt.Printf("%s:%d\n", prefix, outer)
 	}
 	fmt.Println("Completed", prefix)
 }

@@ -19,17 +19,17 @@ func init() {
 
 func main() {
 	buddha := sage{
-		Name: "Buddha",
+		Name:  "Buddha",
 		Motto: "The belief of no belief",
 	}
 
-	gandhi := sage {
-		Name: "Ghandi",
+	gandhi := sage{
+		Name:  "Ghandi",
 		Motto: "Be the change",
 	}
 
-	mlk := sage {
-		Name: "Martin Luther King",
+	mlk := sage{
+		Name:  "Martin Luther King",
 		Motto: "Hatred never ceases with hatred but with love alone is healed",
 	}
 

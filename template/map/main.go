@@ -15,10 +15,10 @@ func init() {
 func main() {
 
 	sages := map[string]string{
-		"India": "Ghandi",
-		"America": "MLK",
+		"India":    "Ghandi",
+		"America":  "MLK",
 		"Meditate": "Buddha",
-		"Love": "Jesus",
+		"Love":     "Jesus",
 	}
 
 	err := tpl.Execute(os.Stdout, sages)

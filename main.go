@@ -1,7 +1,8 @@
 package main
 
 import (
-	"./go_routines/race_condition/mutual_exclusion"
+	//"./go_routines/race_condition/mutual_exclusion"
+	//"./channels"
 	"fmt"
 )
 
@@ -14,6 +15,10 @@ func main() {
 	//race_condition.ExampleOne()
 	//atomic_functions.ExampleOne()
 	//atomic_functions.ExampleTwo()
-	mutual_exclusion.ExampleOne()
+	//mutual_exclusion.ExampleOne()
+	//channels.ExampleOne()
+	//channels.ExampleTwo()
+	//channels.ExampleThree()
+	//channels.ExampleFour()
 	fmt.Println("//Main")
 }

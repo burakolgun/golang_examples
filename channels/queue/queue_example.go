@@ -1,11 +1,11 @@
-package main
+package queue
 
 import (
-	"bufio"
-	"fmt"
-	"os"
-	"strconv"
-	"time"
+"bufio"
+"fmt"
+"os"
+"strconv"
+"time"
 )
 
 const (
@@ -17,7 +17,7 @@ var queue = make(chan string, queueSize)
 var done = make(chan bool)
 var delay time.Duration = 15
 
-func main() {
+func QueueExample() {
 	defer fmt.Println("Channel Sample Finished")
 
 	fmt.Printf("Queue Size %d \n", queueSize)

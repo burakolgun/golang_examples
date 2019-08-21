@@ -1,11 +1,11 @@
-package main
+package channels
 
 import (
 	"fmt"
 	"time"
 )
 
-func main() {
+func ExampleThree() {
 	a := make(chan string)
 	b := make(chan string)
 

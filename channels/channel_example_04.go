@@ -1,4 +1,4 @@
-package main
+package channels
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 var chan1 = make(chan bool, 1)
 var chan2 = make(chan bool, 1)
 
-func main() {
+func ExampleFour() {
 	fmt.Println("Process Starting...")
 	go worker(5)
 	go timer(6)

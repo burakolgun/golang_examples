@@ -36,7 +36,7 @@ func main() {
 			delay = 10
 		}
 
-		go queue_reader(i, delay)
+		go queueReader(i, delay)
 	}
 
 	//creating a producer
@@ -77,7 +77,7 @@ func producer() {
 		for i := 0; i < limit; i++ {
 			fmt.Println("Please give the message for queue")
 
-			queue_message_byte, _, err := bufio.NewReader(os.Stdin).ReadLine()
+			queueMessageByte, _, err := bufio.NewReader(os.Stdin).ReadLine()
 
 			if err != nil {
 				fmt.Println(err)
@@ -85,18 +85,18 @@ func producer() {
 				continue
 			}
 
-			queue_message := string(queue_message_byte)
+			queueMessage := string(queueMessageByte)
 			// Messages sending to queue
-			queue <- queue_message
+			queue <- queueMessage
 		}
 	}
 }
 
-func queue_reader(queueName int, delayTime time.Duration) {
+func queueReader(queueName int, delayTime time.Duration) {
 	for {
 		message := <-queue
-		fmt.Println("Im Reader #%d --- Message reading in queue --- %s", queueName, message)
-		fmt.Println("delay time -> %d", delayTime)
+		fmt.Printf("Im Reader #%d --- Message reading in queue --- %s", queueName, message)
+		fmt.Printf("delay time -> %d", delayTime)
 
 		time.Sleep(delayTime * time.Second)
 	}

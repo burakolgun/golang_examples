@@ -1,4 +1,4 @@
-package unuffered_channel
+package unbuffered_channels
 
 import (
 	"fmt"
@@ -62,11 +62,5 @@ func player(name string, court chan int) {
 
 		// Hit the ball back to the opposing player.
 		court <- ball
-
-
-
-
 	}
-
-
 }

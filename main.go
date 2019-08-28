@@ -1,7 +1,8 @@
 package main
 
 import (
-	"./channels/unuffered_channel"
+	"./channels/unbuffered_channels"
+	"./channels/buffered_channels"
 	"fmt"
 )
 
@@ -21,6 +22,7 @@ func main() {
 	//channels.ExampleFour()
 	//conditions.IfElseExample()
 	//_defer.Example()
-	unuffered_channel.ExampleOne()
+	unbuffered_channels.ExampleOne()
+	buffered_channels.ExampleOne()
 	fmt.Println("//Main")
 }

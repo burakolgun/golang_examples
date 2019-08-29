@@ -4,6 +4,7 @@ import (
 	"./channels/unbuffered_channels"
 	"./channels/buffered_channels"
 	"fmt"
+	"./logging"
 )
 
 func main() {
@@ -24,5 +25,6 @@ func main() {
 	//_defer.Example()
 	unbuffered_channels.ExampleOne()
 	buffered_channels.ExampleOne()
+	logging.ExampleOne()
 	fmt.Println("//Main")
 }

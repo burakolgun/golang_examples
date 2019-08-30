@@ -4,7 +4,8 @@ import (
 	"./channels/unbuffered_channels"
 	"./channels/buffered_channels"
 	"fmt"
-	"./logging"
+	//"./logging" // because log.fatal
+	"./logging/customized_loggers"
 )
 
 func main() {
@@ -23,8 +24,13 @@ func main() {
 	//channels.ExampleFour()
 	//conditions.IfElseExample()
 	//_defer.Example()
+	customized_loggers.Info.Println("unbuffered_channels.ExampleOne()")
 	unbuffered_channels.ExampleOne()
+	customized_loggers.Info.Println("buffered_channels.ExampleOne()")
 	buffered_channels.ExampleOne()
-	logging.ExampleOne()
+	//customized_loggers.Info.Println("logging.ExampleOne()")
+	//logging.ExampleOne()s
+	customized_loggers.Info.Println("customized_loggers.ExampleOne()")
+	customized_loggers.ExampleOne()
 	fmt.Println("//Main")
 }

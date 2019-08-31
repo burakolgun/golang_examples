@@ -15,7 +15,7 @@ var (
 )
 
 func init() {
-	file, err := os.OpenFile("errors.txt", os.O_CREATE | os.O_WRONLY | os.O_APPEND, 777)
+	file, err := os.OpenFile("errors.txt", os.O_CREATE | os.O_WRONLY | os.O_APPEND, 666)
 
 	if err != nil {
 		log.Fatalln("Failed to open error log file: ", err)

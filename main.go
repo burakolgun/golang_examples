@@ -6,6 +6,7 @@ import (
 	"fmt"
 	//"./logging" // because log.fatal
 	"./logging/customized_loggers"
+	"./decoding_encoding/json"
 )
 
 func main() {
@@ -29,8 +30,12 @@ func main() {
 	customized_loggers.Info.Println("buffered_channels.ExampleOne()")
 	buffered_channels.ExampleOne()
 	//customized_loggers.Info.Println("logging.ExampleOne()")
-	//logging.ExampleOne()s
+	//logging.ExampleOne()
 	customized_loggers.Info.Println("customized_loggers.ExampleOne()")
 	customized_loggers.ExampleOne()
+	customized_loggers.Info.Println("json.ExampleTwo()")
+	json.ExampleTwo()
+	customized_loggers.Info.Println("json.ExampleThree()")
+	json.ExampleThree()
 	fmt.Println("//Main")
 }

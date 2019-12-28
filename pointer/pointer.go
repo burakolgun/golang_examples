@@ -1,4 +1,5 @@
 package pointer
+// A pointer is a value that points to the memory address of another variable.
 
 import (
 	"fmt"
